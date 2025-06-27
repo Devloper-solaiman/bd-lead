@@ -21,13 +21,13 @@ const products: Product[] = [
     id: "2",
     name: "Email Leads (10-99k)",
     image: "https://i.ibb.co/WW7fjHsJ/images.jpg",
-    unitPrice: 1.0,
+    unitPrice: 10,
   },
   {
     id: "3",
     name: "Email Leads (100-999k)",
     image: "https://i.ibb.co/WW7fjHsJ/images.jpg",
-    unitPrice: 1.0,
+    unitPrice: 100,
   },
   {
     id: "4",

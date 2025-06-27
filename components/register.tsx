@@ -10,9 +10,9 @@ export default function RegisterPage() {
     <div className="mt-10 p-4 text-sm border rounded">
       <button
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-2  text-xs font-medium dark:text-gray-300 text-black w-full"
+        className="flex items-center gap-2  text-xs font-medium w-full"
       >
-        <CiMemoPad />
+        <CiMemoPad className=" dark:text-gray-100 text-black" />
         <span>Returning customer? <span className="font-semibold">Click here to login</span></span>
 
       </button>
