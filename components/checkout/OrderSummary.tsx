@@ -68,8 +68,8 @@ export default function OrderSummary() {
 
   return (
     <div className="bg-blue-100 p-4 rounded-md max-w-3xl mx-auto mt-6">
-      <h3 className="font-semibold text-sm mb-3">Select package based on Search URL</h3>
-      <div className="grid grid-cols-12 text-xs font-semibold text-gray-700 mb-2">
+      <h3 className="font-semibold text-neutral-900 text-sm mb-3">Select package based on Search URL</h3>
+      <div className="grid grid-cols-12 text-xs font-semibold text-gray-800 mb-2">
         <div className="col-span-6">Product</div>
         <div className="col-span-3 text-center">Quantity</div>
         <div className="col-span-3 text-right">Price</div>
@@ -82,9 +82,9 @@ export default function OrderSummary() {
         return (
           <div
             key={product.id}
-            className="grid grid-cols-12 items-center bg-white mb-2 px-3 py-2 rounded shadow-sm"
+            className="grid grid-cols-12 items-center bg-white text-neutral-900 mb-2 px-3 py-2 rounded shadow-sm"
           >
-            <div className="col-span-6 flex items-center gap-2">
+            <div className="col-span-6 bg-white text-neutral-900 flex items-center gap-2">
               <input
                 type="radio"
                 name="product"
@@ -94,29 +94,29 @@ export default function OrderSummary() {
                   console.log("Selected product:", product.name);
                 }}
               />
-              <img src={product.image} alt={product.name} className="w-8 h-8 object-contain" />
+              <img src={product.image} alt={product.name} className="w-8 h-8 bg-white text-neutral-900 object-contain" />
               <span>
                 {product.name} × {quantity}
               </span>
             </div>
 
-            <div className="col-span-3 flex justify-center items-center gap-2">
+            <div className="col-span-3 flex justify-center bg-white text-neutral-900 items-center gap-2">
               <button
                 onClick={() => handleQuantityChange(product.id, -1)}
-                className="px-2 py-1 border rounded text-sm"
+                className="px-2 py-1 border rounded bg-white text-neutral-900 text-sm"
               >
                 −
               </button>
               <span>{quantity}</span>
               <button
                 onClick={() => handleQuantityChange(product.id, 1)}
-                className="px-2 py-1 border rounded text-sm"
+                className="px-2 py-1 border rounded bg-white text-neutral-900 text-sm"
               >
                 +
               </button>
             </div>
 
-            <div className="col-span-3 text-right font-semibold text-sm">
+            <div className="col-span-3 text-right bg-white text-neutral-900 font-semibold text-sm">
               {price}$ 
             </div>
           </div>
