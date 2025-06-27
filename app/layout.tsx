@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   icons: {
-    icon: "/favicon.ico",
+    icon: "https://i.ibb.co/ksf6gj6Q/phone.jpg",
   },
 };
 
