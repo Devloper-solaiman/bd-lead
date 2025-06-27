@@ -12,8 +12,8 @@ export default function RegisterPage() {
         onClick={() => setOpen((v) => !v)}
         className="flex items-center gap-2  text-xs font-medium w-full"
       >
-        <CiMemoPad className=" dark:text-gray-100 text-black" />
-        <span>Returning customer? <span className="font-semibold">Click here to login</span></span>
+        <CiMemoPad className=" bg-white text-2xl text-neutral-900" />
+        <span className="text-neutral-800">Returning customer? <span className="font-semibold text-neutral-900">Click here to login</span></span>
 
       </button>
 
@@ -23,28 +23,28 @@ export default function RegisterPage() {
       >
         <div className="space-y-3 border border-gray-500 rounded p-4">
           <div className="mt-4 space-y-3 ">
-            <p className="text-xs text-gray-600">
+            <p className="text-xs text-gray-700">
               If you have shopped with us before, please enter your details below.
               If you are a new customer, please proceed to the Billing section.
             </p>
             <form className="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div>
-                <input className="w-full border rounded px-2 py-1" type="text" />
+                <input className="w-full border rounded bg-white text-black px-2 py-1" type="text" />
               </div>
               <div>
                 <input
-                  className="w-full border rounded px-2 py-1"
+                  className="w-full border rounded bg-white text-black px-2 py-1"
                   type="password"
                 />
               </div>
               <div className="flex items-center col-span-full">
-                <input className="mr-2" id="remember" type="checkbox" />
-                <label className="text-xs text-emerald-500" htmlFor="remember">
+                <input className="mr-2 text-2xl bg-white" id="remember" type="checkbox" />
+                <label className="text-xs text-neutral-900" htmlFor="remember">
                   Remember me
                 </label>
               </div>
               <button
-                className="col-span-full bg-orange-500 text-white rounded py-2 text-center"
+                className="col-span-full bg-orange-600 text-white rounded py-2 text-center"
                 type="submit"
               >
                 Login
