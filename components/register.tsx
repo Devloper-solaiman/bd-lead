@@ -39,7 +39,7 @@ export default function RegisterPage() {
               </div>
               <div className="flex items-center col-span-full">
                 <input className="mr-2" id="remember" type="checkbox" />
-                <label className="text-xs" htmlFor="remember">
+                <label className="text-xs text-emerald-500" htmlFor="remember">
                   Remember me
                 </label>
               </div>
